@@ -26,9 +26,8 @@ html
 main
   display: grid
   grid-template-columns: 1fr
-  grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
   grid-template-areas: "pr" "w" "pl" "s" "p" "e" "so" "sl"
-  grid-gap: 0.5rem
 
   .profile
     grid-area: 'pr'
@@ -90,7 +89,7 @@ main
     width: 90vw
     height: 11rem
     border-radius: 23px
-    margin: 0 auto
+    margin: 0.5rem auto
 
     .title-card
       & h2, h1
@@ -227,3 +226,19 @@ main
 
 footer
   margin: 5rem 0 2rem 0
+  a
+    padding: 1rem
+    margin: 1rem 0
+    text-decoration: none
+  #logo
+    margin: 1rem 0
+    font-family: ''Segoe UI', Tahoma, Geneva, Verdana, sans-serif'
+    font-size: 1rem
+    text-decoration: none
+    color: white
+    a
+    span
+      border: 2px solid #8edd0f
+      font-size: 1.2rem
+      font-weight: bold
+      padding: 0.5rem
