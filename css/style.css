@@ -17,32 +17,35 @@ main {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "pr" "w" "pl" "s" "p" "e" "so" "sl";
 }
-main .profile {
+
+.profile {
   grid-area: "pr";
   margin: 1rem auto;
   width: 90vw;
   border-radius: 23px;
 }
-main .profile .profile-avatar {
+.profile .profile-avatar {
   display: flex;
   background: #5847eb;
   padding: 1.5rem;
   border-radius: 23px;
+  align-items: center;
 }
-main .profile .profile-avatar .name {
+.profile .profile-avatar .name {
   display: block;
+  text-align: left;
 }
-main .profile .profile-avatar .name p {
+.profile .profile-avatar .name p {
   color: #bdc1ff;
 }
-main .profile .profile-avatar img {
+.profile .profile-avatar img {
   width: 5em;
   height: auto;
   border: 2px solid white;
   border-radius: 100%;
   margin-right: 1rem;
 }
-main .profile .stats {
+.profile .stats {
   display: flex;
   flex-direction: column;
   border-radius: 23px;
@@ -50,30 +53,32 @@ main .profile .stats {
   font-size: 1rem;
   text-align: center;
 }
-main .profile .stats h1 {
+.profile .stats h1 {
   font-family: "Rubik";
   font-size: 1.1em;
   font-weight: 300;
 }
-main .profile .stats p {
+.profile .stats button {
+  font-size: 1.2rem;
   justify-content: space-evenly;
   padding: 1.5rem;
-  margin: 0 auto;
-}
-main .profile .stats p a {
+  background: none;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
   margin: auto;
   color: #bdc1ff;
   transition: 500ms ease;
 }
-main .profile .stats p a:hover {
+.profile .stats button:hover {
   color: white;
   transition: 500ms ease;
 }
-main .profile .calendar {
+.profile .calendar {
   display: flex;
 }
-main .cards {
+
+.cards {
   display: flex;
   flex-direction: column-reverse;
   width: 90vw;
@@ -81,70 +86,76 @@ main .cards {
   border-radius: 23px;
   margin: 0.5rem auto;
 }
-main .cards .title-card h2, main .cards .title-card h1 {
+.cards .title-card h2, .cards .title-card h1 {
   padding: 0.5rem 0;
 }
-main .cards .bg-card {
+.cards .bg-card {
   display: flex;
   border-radius: 23px;
   background: #1c1f4a;
   justify-content: space-between;
   padding: 1.5em 0;
 }
-main .cards .bg-card h1, main .cards .bg-card h2, main .cards .bg-card p {
+.cards .bg-card h1, .cards .bg-card h2, .cards .bg-card p {
   margin: 0 1.5rem;
 }
-main .cards .bg-card h1 a, main .cards .bg-card h2 a, main .cards .bg-card p a {
+.cards .bg-card h1 a, .cards .bg-card h2 a, .cards .bg-card p a {
   color: #bdc1ff;
   text-decoration: none;
   transition: 500ms ease;
 }
-main .cards .bg-card h1 a:hover, main .cards .bg-card h2 a:hover, main .cards .bg-card p a:hover {
+.cards .bg-card h1 a:hover, .cards .bg-card h2 a:hover, .cards .bg-card p a:hover {
   color: white;
   transition: 500ms ease;
 }
-main .cards .expansion {
+.cards .expansion {
   text-align: right;
 }
-main .cards .expansion h1, main .cards .expansion p {
+.cards .expansion h1, .cards .expansion p {
   margin: 0.8rem;
 }
-main .work {
+
+.work {
   grid-area: w;
   background: #ff8c66;
   background-image: url("../images/icon-work.svg");
   background-repeat: no-repeat;
   background-position-x: right;
 }
-main .play {
+
+.play {
   grid-area: pl;
   background: #56c2e6;
   background-image: url("../images/icon-play.svg");
   background-repeat: no-repeat;
   background-position-x: right;
 }
-main .study {
+
+.study {
   grid-area: s;
   background: #ff5c7c;
   background-image: url("../images/icon-study.svg");
   background-repeat: no-repeat;
   background-position-x: right;
 }
-main .exercise {
+
+.exercise {
   grid-area: e;
   background: #4acf81;
   background-image: url("../images/icon-exercise.svg");
   background-repeat: no-repeat;
   background-position-x: right;
 }
-main .social {
+
+.social {
   grid-area: so;
   background: #7536d3;
   background-image: url("../images/icon-social.svg");
   background-repeat: no-repeat;
   background-position-x: right;
 }
-main .selfCare {
+
+.selfCare {
   grid-area: sl;
   background: #f1c65b;
   background-image: url("../images/icon-self-care.svg");
@@ -185,7 +196,7 @@ main .selfCare {
     text-align: left;
     margin: 2rem 1rem;
   }
-  .container .profile .calendar p {
+  .container .profile .calendar button {
     padding: 1rem;
   }
   .container .cards {
