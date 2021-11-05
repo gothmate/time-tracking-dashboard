@@ -32,6 +32,8 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
+![](./images/mobile.jpg)/
+
 ### Links
 
 - Solution URL: [Gothmate's solution](https://gothmate.github.io/time-tracking-dashboard/)
@@ -60,11 +62,9 @@ Learn new methods to manipulate the layout.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Example resources] = @edinelsonslima and Paulo-RJ#9438 (discord account)
 
 ## Author
 
 - Website - [gothmate](https://gothmate.github.io)
 - Frontend Mentor - [@gothmate](https://www.frontendmentor.io/profile/gothmate)
-- Twitter - [@gothmate](https://www.twitter.com/gothmate)
