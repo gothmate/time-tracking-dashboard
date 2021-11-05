@@ -16,7 +16,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
@@ -52,7 +52,7 @@ Users should be able to:
 
 ### What I learned
 
-I used this chalenge to preview my working time in each fase of the development and to learn Saas workflow.
+I used this challenge to preview my working time in each fase of the development and to learn Saas workflow.
 
 ### Continued development
 
@@ -62,7 +62,7 @@ Learn new methods to manipulate the layout.
 
 ### Useful resources
 
-- [Example resources] = @edinelsonslima and Paulo-RJ#9438 (discord account)
+- [usefull help from] = [@edinelsonslima](https://www.instagram.com/edinelsonslima/) and Paulo-RJ#9438 (discord user account)
 
 ## Author
 
