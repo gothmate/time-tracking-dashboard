@@ -192,7 +192,8 @@ main {
     font-size: 2em;
   }
   .container .profile .calendar {
-    display: block;
+    display: grid;
+    width: fit-content;
     text-align: left;
     margin: 2rem 1rem;
   }
@@ -212,12 +213,17 @@ main {
   .container .cards .bg-card .title-card h2 {
     font-size: 1.2rem;
   }
-  .container .cards .bg-card .expansion p {
-    display: block;
-    font-size: 0.8rem;
+  .container .cards .bg-card .expansion h1 {
     position: relative;
-    top: 5rem;
-    right: 6rem;
+    width: fit-content;
+  }
+  .container .cards .bg-card .expansion p {
+    position: relative;
+    margin: auto 0;
+    text-align: center;
+    font-size: 0.9rem;
+    top: 4rem;
+    right: 4.5rem;
   }
   .container .work {
     grid-area: w;
@@ -249,9 +255,13 @@ footer {
   text-align: center;
 }
 footer a {
+  color: #bdc1ff;
   padding: 1rem;
   margin: 1rem 0;
   text-decoration: none;
+}
+footer a:hover {
+  color: #4acf81;
 }
 footer #logo {
   margin: 1rem 0;
@@ -265,6 +275,9 @@ footer #logo span {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 0.5rem;
+}
+footer #logo span:hover {
+  color: #ff8c66;
 }
 
 /*# sourceMappingURL=style.css.map */

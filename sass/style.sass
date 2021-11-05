@@ -5,11 +5,6 @@
   padding: 0
   box-sizing: border-box
 
-@mixin centerFlex
-  display: flex
-  align-items: center
-  justify-content: center
-
 @mixin bgRight
   background-repeat: no-repeat
   background-position-x: right
@@ -114,9 +109,9 @@ main
         color: variables.$paleBlue
         text-decoration: none
         transition: 500ms ease
-      & a:hover
-        color: white
-        transition: 500ms ease
+        &:hover
+          color: white
+          transition: 500ms ease
 
   .expansion
     text-align: right
@@ -183,7 +178,8 @@ main
             font-size: 2em
 
       .calendar
-        display: block
+        display: grid
+        width: fit-content
         text-align: left
         margin: 2rem 1rem
         button
@@ -202,12 +198,18 @@ main
           h2
             font-size: 1.2rem
         .expansion
-          p
-            display: block
-            font-size: 0.8rem
+
+          & h1
             position: relative
-            top: 5rem
-            right: 6rem
+            width: fit-content
+
+          & p
+            position: relative
+            margin: auto 0
+            text-align: center
+            font-size: 0.9rem
+            top: 4rem
+            right: 4.5rem
 
     .work
       grid-area: w
@@ -233,9 +235,12 @@ footer
   margin: 2rem 0 2rem 0
   text-align: center
   a
+    color: variables.$paleBlue
     padding: 1rem
     margin: 1rem 0
     text-decoration: none
+    &:hover
+      color: variables.$limeGreenExercise
   #logo
     margin: 1rem 0
     font-family: ''Segoe UI', Tahoma, Geneva, Verdana, sans-serif'
@@ -248,3 +253,6 @@ footer
       font-size: 1.2rem
       font-weight: bold
       padding: 0.5rem
+
+      &:hover
+        color: variables.$lightRedWork
